@@ -1,7 +1,26 @@
 aid: payworks
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/payworks.png
 name: Payworks
-description: Payworks is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Payworks was a Munich-based payment-infrastructure company backed by Speedinvest, building
+  a mobile point-of-sale (mPOS) payment-gateway platform that let acquirers, PSPs and ISVs turn commodity
+  smartphones and tablets into card-accepting terminals via a developer SDK and gateway. It was acquired
+  by Visa in 2019 and its technology was folded into Visa's acceptance/CyberSource stack, after which the
+  independent Payworks brand was wound down. As of this enrichment pass the company operates no active
+  independent public developer surface — its primary domains are dormant (payworks.com resolves to a parked
+  AWS S3 redirect bucket with no website configuration; payworks.de is a domain-for-sale parking page) and
+  no docs/developer/api subdomains resolve — so there is no live OpenAPI, SDK, or documentation surface to
+  harvest into the network. This profile is retained as a historical Speedinvest portfolio record.
 url: https://raw.githubusercontent.com/api-evangelist/payworks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +28,28 @@ x-backed-by:
 - speedinvest
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: dormant
+x-status-detail: Acquired by Visa (2019); primary domains parked/for-sale, no live developer surface as of 2026-07-20.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Payments
+- Point of Sale
+- Payment Gateway
+- Fintech
+- mPOS
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  note: Dormant/acquired company (Visa, 2019); domains parked, no live API/docs/SDK surface to harvest. Identity hygiene only.
