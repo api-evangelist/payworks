@@ -72,3 +72,9 @@ x-enrichment:
   artifacts_added: 0
   pass: local-v1
   note: Dormant/acquired company (Visa, 2019); domains parked, no live API/docs/SDK surface to harvest. Identity hygiene only.
+common:
+- type: ParentCompany
+  url: https://apis.io/providers/visa/
+  name: Visa
+  x-relationship: acquired
+  x-evidence: "It was acquired by Visa in 2019 and its technology was folded into Visa's acceptance/CyberSource stack, after which the independent Payworks brand was wound down."
